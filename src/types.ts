@@ -1,6 +1,7 @@
 export type SingleAnswerQuestion = {
     type: string,
     question: string,
+    image?: string,
     options: string[],
     answer: string
 }
@@ -8,6 +9,7 @@ export type SingleAnswerQuestion = {
 export type MultipleAnswerQuestion = {
     type: string,
     question: string,
+    image?: string,
     options: string[],
     answer: string[]
 }

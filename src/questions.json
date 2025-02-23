@@ -1,5 +1,6 @@
 [
   {
+    "index": 1,
     "type": "single",
     "question": "Cuando adelanta a un ciclista usted debe dejar el máximo espacio lateral posible. ¿Por qué?",
     "options": [
@@ -11,8 +12,10 @@
     "answer": "Porque el ciclista podría desviarse bruscamente."
   },
   {
+    "index": 2,
     "type": "single",
     "question": "¿Qué debería hacer el conductor del auto indicado con la flecha?",
+    "image": "p2.png",
     "options": [
       "Hacer señas con la mano a los peatones que están esperando poder cruzar.",
       "Pasar rápidamente por detrás del peatón que va cruzando la calzada.",
@@ -22,6 +25,7 @@
     "answer": "Esperar a que pase el peatón que va por la calzada."
   },
   {
+    "index": 3,
     "type": "single",
     "question": "Usted desea adelantar. ¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
     "options": [
@@ -33,6 +37,7 @@
     "answer": "Usted tiene la obligación de esperar a que la pista del sentido contrario esté libre de vehículos para luego adelantar."
   },
   {
+    "index": 4,
     "type": "single",
     "question": "Mientras conduce usted siente un fuerte olor a gasolina. ¿Qué debería hacer usted?",
     "options": [
@@ -44,6 +49,7 @@
     "answer": "Detenerse e investigar el problema."
   },
   {
+    "index": 5,
     "type": "single",
     "question": "Entre los accidentes de tránsito se distinguen distintos tipos de éstos. En Chile, ¿cuál es el tipo de accidente que origina la mayor cantidad de muertos?",
     "options": [
@@ -55,6 +61,7 @@
     "answer": "Los atropellos."
   },
   {
+    "index": 6,
     "type": "single",
     "question": "¿Qué significa la luz verde del semáforo?",
     "options": [
@@ -66,6 +73,7 @@
     "answer": "Siga, pero solo si su pista está expedita justo después del cruce."
   },
   {
+    "index": 7,
     "type": "single",
     "question": "De noche, en una zona rural, por emergencia usted estaciona su vehículo al costado de la vía. ¿En qué circunstancia debe usted encender sus luces de estacionamiento?",
     "options": [
@@ -77,6 +85,7 @@
     "answer": "Siempre."
   },
   {
+    "index": 8,
     "type": "single",
     "question": "Un vehículo emerge sorpresivamente desde una vía lateral situándose delante suyo y obligándolo a frenar fuertemente. ¿Qué hace usted?",
     "options": [
@@ -88,6 +97,7 @@
     "answer": "Ignora el error y permanece calmado."
   },
   {
+    "index": 9,
     "type": "single",
     "question": "Usted está virando hacia la derecha en un camino resbaladizo y las ruedas traseras de su vehículo resbalan hacia la izquierda. ¿Qué debería hacer usted?",
     "options": [
@@ -99,8 +109,10 @@
     "answer": "Guiar cuidadosamente hacia la izquierda."
   },
   {
+    "index": 10,
     "type": "single",
     "question": "Usted va circulando por la pista de la derecha de una carretera de doble calzada muy transitada. Una señal le indica que a 800 m su pista se encuentra cerrada. ¿Qué debería hacer usted?",
+    "image": "p10.png",
     "options": [
       "Señalizar a la izquierda, luego detenerse y esperar a que alguien le dé la pasada.",
       "Encender sus luces de advertencia de peligro y desplazarse hacia la pista de su izquierda.",
@@ -110,7 +122,9 @@
     "answer": "Desplazarse hacia la pista de su izquierda tan pronto pueda hacerlo en forma segura."
   },
   {
+    "index": 11,
     "type": "multiple",
+    "image": "p11.png",
     "question": "¿Frente a cuál o cuáles de las siguientes señales e indicaciones del semáforo debe usted detenerse siempre?",
     "options": [
       "a) Luz roja.",
@@ -121,6 +135,7 @@
     "answer": ["b) Luz amarilla.", "d) Luz roja intermitente."]
   },
   {
+    "index": 12,
     "type": "single",
     "question": "¿Cuál es la principal razón por la cual su distancia de detención total es mayor después de una lluvia torrencial?",
     "options": [
@@ -132,7 +147,9 @@
     "answer": "Porque sus neumáticos tendrán menos adherencia sobre la calzada."
   },
   {
+    "index": 13,
     "type": "single",
+    "image": "p13.png",
     "question": "¿Qué le indica la señal de tránsito que se observa en la fotografía?",
     "options": [
       "Que usted está obligado a detenerse a la altura de la señal.",
@@ -143,6 +160,7 @@
     "answer": "Que usted está obligado a ceder el paso a los vehículos que se aproximen por la otra vía."
   },
   {
+    "index": 14,
     "type": "single",
     "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) correcta(s) tratándose de una vía urbana sin señales de tránsito que prohíban o autoricen el estacionamiento o la detención?",
     "options": [
@@ -154,6 +172,7 @@
     "answer": "Al estacionar, usted debe hacerlo al costado derecho y preocupándose de dejar una distancia de a lo menos 10 m entre su vehículo y la esquina."
   },
   {
+    "index": 15,
     "type": "single",
     "question": "En relación con el cansancio y la conducción, de las siguientes afirmaciones, ¿cuál es falsa?",
     "options": [
@@ -165,6 +184,7 @@
     "answer": "Si un conductor está cansado, lo mejor es que su acompañante le vaya hablando permanentemente."
   },
   {
+    "index": 16,
     "type": "single",
     "question": "La distancia de frenado es la que recorre un vehículo desde que se presiona el freno hasta que el vehículo se detiene. En condiciones normales, ¿cuál sería aproximadamente su distancia de frenado si usted circula a 90 km/h?",
     "options": [
@@ -176,6 +196,7 @@
     "answer": "Unos 45 metros."
   },
   {
+    "index": 17,
     "type": "single",
     "question": "Usted va por una calle de doble sentido de tránsito. Para virar a la izquierda, ¿dónde debería ubicarse?",
     "options": [
@@ -186,6 +207,7 @@
     "answer": "Justo a la derecha de la línea de centro de calzada."
   },
   {
+    "index": 18,
     "type": "single",
     "question": "¿A qué se debe un alto consumo de combustible?",
     "options": [
@@ -197,6 +219,7 @@
     "answer": "Frecuentes frenadas y aceleraciones."
   },
   {
+    "index": 19,
     "type": "single",
     "question": "¿Qué puede esperarse de un conductor impulsivo?",
     "options": [
@@ -208,6 +231,7 @@
     "answer": "Que actúe sin pensar en las consecuencias., Que efectúe maniobras sorpresivas que sorprendan a los demás."
   },
   {
+    "index": 20,
     "type": "single",
     "question": "¿Cómo puede prevenir usted el riesgo de incendio de su vehículo?",
     "options": [
@@ -219,6 +243,7 @@
     "answer": "Revisando su vehículo ante cualquier olor a gasolina extraño."
   },
   {
+    "index": 21,
     "type": "single",
     "question": "Al aproximarse a una curva hacia la izquierda usted debería mantenerse bien a la derecha. ¿Por qué?",
     "options": [
@@ -230,12 +255,15 @@
     "answer": "Para tener una mejor visual sobre el camino."
   },
   {
+    "index": 22,
     "type": "single",
+    "image": "p22.png",
     "question": "¿Cuál de estas señales le previene que más adelante hay una serie de curvas?",
     "options": ["a) Señal A.", "b) Señal B.", "c) Señal C.", "d) Señal D."],
     "answer": "B"
   },
   {
+    "index": 23,
     "type": "multiple",
     "question": "¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
     "options": [
@@ -252,6 +280,7 @@
     ]
   },
   {
+    "index": 24,
     "type": "single",
     "question": "¿Qué importancia tiene usar el calzado adecuado al conducir?",
     "options": [
@@ -262,8 +291,10 @@
     "answer": "Para tener un adecuado control de los pedales."
   },
   {
+    "index": 25,
     "type": "single",
     "question": "Usted conduce a 90 km/h cuando la vía es obstruida sorpresivamente por un camión que está virando a la izquierda. ¿Qué es lo primero que hace usted?",
+    "image": "p25.png",
     "options": [
       "Hace señales de luces y toca la bocina.",
       "Frena firmemente.",
@@ -273,6 +304,7 @@
     "answer": "Frena firmemente."
   },
   {
+    "index": 26,
     "type": "single",
     "question": "Fuera de la ciudad, usted va por una carretera de doble calzada con dos pistas por sentido. La velocidad máxima permitida es de 100 km/hr. Si usted va a 90 km/hr y no van vehículos delante suyo, ¿por cuál pista circula usted?",
     "options": [
@@ -283,6 +315,7 @@
     "answer": "Por la pista de la derecha."
   },
   {
+    "index": 27,
     "type": "single",
     "question": "¿Qué distancia de detención tiene un tren que circula a alrededor de 100 km/h?",
     "options": [
@@ -294,8 +327,10 @@
     "answer": "Entre 800 y 1000 metros."
   },
   {
+    "index": 28,
     "type": "single",
     "question": "Usted va detrás de un camión articulado que va a doblar a la derecha hacia una vía angosta. ¿Qué debe hacer usted?",
+    "image": "p28.png",
     "options": [
       "Desplazarse rápidamente hacia la pista adyacente y sobrepasarlo.",
       "Tocar la bocina para advertir su presencia.",
@@ -305,6 +340,7 @@
     "answer": "Mantenerse detrás de él hasta que finalice su maniobra."
   },
   {
+    "index": 29,
     "type": "single",
     "question": "Usted acaba de conducir a través de una calle inundada. ¿Qué es lo primero que debería hacer?",
     "options": [
@@ -316,6 +352,7 @@
     "answer": "Chequear sus frenos."
   },
   {
+    "index": 30,
     "type": "single",
     "question": "Usted está conduciendo de noche y es encandilado por las luces delanteras de un vehículo que se aproxima. En estas circunstancias, ¿qué hace usted?",
     "options": [
@@ -327,6 +364,7 @@
     "answer": "Reduce la velocidad o se detiene."
   },
   {
+    "index": 31,
     "type": "single",
     "question": "Una baja presión de aire en los neumáticos delanteros...",
     "options": [
@@ -338,6 +376,7 @@
     "answer": "hace sentir la dirección más pesada."
   },
   {
+    "index": 32,
     "type": "single",
     "question": "En relación con los cruces ferroviarios a nivel, ¿cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
     "options": [
@@ -349,6 +388,7 @@
     "answer": "Si ya ha ingresado a un cruce ferroviario y siente que se aproxima un tren a lo lejos, lo mejor es continuar., Si va con la radio de su vehículo encendida, es conveniente apagarla cuando se aproxima a un cruce ferroviario."
   },
   {
+    "index": 33,
     "type": "multiple",
     "question": "Como regla general, ¿en cuál o cuáles de los siguientes lugares nunca debe estacionar?",
     "options": [
@@ -366,6 +406,7 @@
     ]
   },
   {
+    "index": 34,
     "type": "single",
     "question": "¿Por qué los neumáticos deben mantenerse a la presión indicada por el fabricante?",
     "options": [
@@ -377,6 +418,7 @@
     "answer": "Para ayudar a evitar que el automóvil se roncee."
   },
   {
+    "index": 35,
     "type": "single",
     "question": "Usted se ha quedado detenido justo al medio de un cruce ferroviario con sistema automático de señales y barreras y no puede echar a andar el motor nuevamente. La campanilla del cruce comienza a sonar. ¿Qué debería hacer usted?",
     "options": [

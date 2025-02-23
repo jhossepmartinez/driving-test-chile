@@ -1,7 +1,7 @@
 import { MultipleAnswerQuestion } from "../../types";
 
 export const MultipleAnswerQuestionCard = ({ questionData, onChange, userAnswers, showAnswers }: {questionData: MultipleAnswerQuestion, onChange: (answer: string[]) => void, userAnswers: string[], showAnswers: boolean}) => {
-    const { question, options, answer } = questionData;
+    const { question, options, answer, image } = questionData;
 
     const handleCheckboxChange = (option: string) => {
         const updatedAnswers = userAnswers.includes(option)
@@ -16,6 +16,14 @@ export const MultipleAnswerQuestionCard = ({ questionData, onChange, userAnswers
                 <h2 className="card-title">
                     {question}
                 </h2>
+                { image && (
+                    <figure>
+                        <img
+                            className="rounded-md object-cover"
+                            src={image}
+                            alt="" />
+                    </figure>
+                )}
                 <div className="space-y-2">
                     {options.map((option, index) => (
                         <div
