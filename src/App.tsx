@@ -1,51 +1,113 @@
-import { useEffect, useState } from 'react'
+import {
+    useEffect, useState 
+} from 'react'
 import './App.css'
-import { MultipleAnswerQuestionCard } from './components/MultipleAnswerQuestionCard/MultipleAnswerQuestionCard'
+import {
+    MultipleAnswerQuestionCard 
+} from './components/MultipleAnswerQuestionCard/MultipleAnswerQuestionCard'
 import SingleAnswerQuestionCard from './components/SingleAnswerQuestionCard/SingleAnswerQuestionCard'
 import questions from "./questions.json"
-import { isMultipleAnswerQuestion, isSingleAnswerQuestion, MultipleAnswerQuestion, Question, SingleAnswerQuestion } from './types'
+import {
+    isMultipleAnswerQuestion, isSingleAnswerQuestion, MultipleAnswerQuestion, Question, SingleAnswerQuestion 
+} from './types'
 
-function App() {
-    const [theme, setTheme] = useState(localStorage.getItem("theme") || "emerald")
-    const [showAnswers, setShowAnswers] = useState(false)
+function App(
+) {
+    const [theme, setTheme] = useState(
+        localStorage.getItem(
+            "theme"
+        ) || "emerald"
+    )
+    const [showAnswers, setShowAnswers] = useState(
+        false
+    )
     
-    useEffect(() => {
-        localStorage.setItem("theme", theme)
-        const localTheme = localStorage.getItem("theme")
-        document.querySelector("html")?.setAttribute("data-theme", localTheme || "emerald")
-    }, [theme])
+    useEffect(
+        (
+        ) => {
+            localStorage.setItem(
+                "theme", theme
+            )
+            const localTheme = localStorage.getItem(
+                "theme"
+            )
+            document.querySelector(
+                "html"
+            )?.setAttribute(
+                "data-theme", localTheme || "emerald"
+            )
+        }, [theme]
+    )
 
     const quizQuestions: Question[] = questions
 
-    const [userAnswers, setUserAnswers] = useState<{ [key: number]: string | string[] }>({});
-    const [results, setResults] = useState<{ correct: number; total: number } | null>(null);
+    const [userAnswers, setUserAnswers] = useState<{ [key: number]: string | string[] }>(
+        {
+        }
+    );
+    const [results, setResults] = useState<{ correct: number; total: number } | null>(
+        null
+    );
 
-    const handleSingleAnswerChange = (index: number, answer: string) => {
-        setUserAnswers((prev: { [key: number]: string | string[] }) => ({ ...prev, [index]: answer }));
+    const handleSingleAnswerChange = (
+        index: number, answer: string
+    ) => {
+        setUserAnswers(
+            (
+                prev: { [key: number]: string | string[] }
+            ) => ({
+                ...prev, [index]: answer 
+            })
+        );
     };
 
-    const handleMultipleAnswerChange = (index: number, answers: string[]) => {
-        setUserAnswers((prev) => ({ ...prev, [index]: answers }));
+    const handleMultipleAnswerChange = (
+        index: number, answers: string[]
+    ) => {
+        setUserAnswers(
+            (
+                prev
+            ) => ({
+                ...prev, [index]: answers 
+            })
+        );
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (
+    ) => {
         let correctCount = 0;
 
-        quizQuestions.forEach((question, index) => {
-            const userAnswer = userAnswers[index];
-            if (question.type === "single") {
-                if (userAnswer === (question as SingleAnswerQuestion).answer) {
-                    correctCount++;
-                }
-            } else if (question.type === "multiple") {
-                const correctAnswers = (question as MultipleAnswerQuestion).answer;
-                if ( Array.isArray(userAnswer) && userAnswer.length === correctAnswers.length && userAnswer.every((ans) => correctAnswers.includes(ans))) {
-                    correctCount++;
-                }
-            }    
-        });
+        quizQuestions.forEach(
+            (
+                question, index
+            ) => {
+                const userAnswer = userAnswers[index];
+                if (question.type === "single") {
+                    if (userAnswer === (question as SingleAnswerQuestion).answer) {
+                        correctCount++;
+                    }
+                } else if (question.type === "multiple") {
+                    const correctAnswers = (question as MultipleAnswerQuestion).answer;
+                    if ( Array.isArray(
+                        userAnswer
+                    ) && userAnswer.length === correctAnswers.length && userAnswer.every(
+                        (
+                            ans
+                        ) => correctAnswers.includes(
+                            ans
+                        )
+                    )) {
+                        correctCount++;
+                    }
+                }    
+            }
+        );
 
-        setResults({ correct: correctCount, total: quizQuestions.length });
+        setResults(
+            {
+                correct: correctCount, total: quizQuestions.length 
+            }
+        );
     };
 
     return (
@@ -54,7 +116,10 @@ function App() {
             <div className="fixed space-x-4">
                 <button
                     className="btn btn-neutral"
-                    onClick={() => setTheme(theme => theme === "emerald" ? "dark" : "emerald")}>
+                    onClick={(
+                    ) => setTheme(
+                        theme => theme === "emerald" ? "dark" : "emerald"
+                    )}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -75,7 +140,10 @@ function App() {
                     Submit
                 </button>
                 <button
-                    onClick={() => setShowAnswers(showAnswers => !showAnswers)}
+                    onClick={(
+                    ) => setShowAnswers(
+                        showAnswers => !showAnswers
+                    )}
                     className="btn btn-ghost"
                 >
                     Show answers
@@ -100,25 +168,41 @@ function App() {
 
             <div className="self-center bg-base-200 flex justify-center pt-6">
                 <div className="w-xl">
-                    {quizQuestions.map((question, index) => {
-                        if (isSingleAnswerQuestion(question)) {
-                            return (
-                                <SingleAnswerQuestionCard
+                    {quizQuestions.map(
+                        (
+                            question, index
+                        ) => {
+                            if (isSingleAnswerQuestion(
+                                question
+                            )) {
+                                return (
+                                    <SingleAnswerQuestionCard
+                                        key={index}
+                                        showAnswers={showAnswers}
+                                        questionData={question}
+                                        onChange={(
+                                            answer
+                                        ) => handleSingleAnswerChange(
+                                            index, answer
+                                        )} />
+                                )
+                            } else if (isMultipleAnswerQuestion(
+                                question
+                            )) {
+                                return <MultipleAnswerQuestionCard
                                     key={index}
                                     showAnswers={showAnswers}
-                                    questionData={question}
-                                    onChange={(answer) => handleSingleAnswerChange(index, answer)} />
-                            )
-                        } else if (isMultipleAnswerQuestion(question)) {
-                            return <MultipleAnswerQuestionCard
-                                key={index}
-                                showAnswers={showAnswers}
-                                questionData={question as MultipleAnswerQuestion}
-                                userAnswers={(userAnswers[index] as string[]) || []}
-                                onChange={(answers) => handleMultipleAnswerChange(index, answers)}
-                            />
+                                    questionData={question as MultipleAnswerQuestion}
+                                    userAnswers={(userAnswers[index] as string[]) || []}
+                                    onChange={(
+                                        answers
+                                    ) => handleMultipleAnswerChange(
+                                        index, answers
+                                    )}
+                                />
+                            }
                         }
-                    })}
+                    )}
                 </div>
 
             </div>

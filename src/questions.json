@@ -28,6 +28,7 @@
     "index": 3,
     "type": "single",
     "question": "Usted desea adelantar. ¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
+    "image": "p3.png",
     "options": [
       "El camión tiene la obligación de correrse hacia la berma para dejarle a usted más espacio.",
       "El auto que viene en sentido contrario tiene la obligación de correrse a la berma para aumentar la seguridad.",
@@ -102,11 +103,11 @@
     "question": "Usted está virando hacia la derecha en un camino resbaladizo y las ruedas traseras de su vehículo resbalan hacia la izquierda. ¿Qué debería hacer usted?",
     "options": [
       "Frenar firmemente y no girar el manubrio.",
-      "Guiar cuidadosamente hacia la izquierda.",
+      "Girar cuidadosamente hacia la izquierda.",
       "Usar el embrague y frenar firmemente.",
       "Girar hacia la derecha."
     ],
-    "answer": "Guiar cuidadosamente hacia la izquierda."
+    "answer": "Girar cuidadosamente hacia la izquierda."
   },
   {
     "index": 10,
@@ -126,13 +127,8 @@
     "type": "multiple",
     "image": "p11.png",
     "question": "¿Frente a cuál o cuáles de las siguientes señales e indicaciones del semáforo debe usted detenerse siempre?",
-    "options": [
-      "a) Luz roja.",
-      "b) Luz amarilla.",
-      "c) Luz verde.",
-      "d) Luz roja intermitente."
-    ],
-    "answer": ["b) Luz amarilla.", "d) Luz roja intermitente."]
+    "options": ["a) a", "b) b", "c) c", "d) d"],
+    "answer": ["b) b", "d) d"]
   },
   {
     "index": 12,
@@ -220,7 +216,7 @@
   },
   {
     "index": 19,
-    "type": "single",
+    "type": "multiple",
     "question": "¿Qué puede esperarse de un conductor impulsivo?",
     "options": [
       "Que reaccione adecuadamente ante cualquier imprevisto.",
@@ -228,7 +224,10 @@
       "Que conduzca con excesiva precaución.",
       "Que efectúe maniobras sorpresivas que sorprendan a los demás."
     ],
-    "answer": "Que actúe sin pensar en las consecuencias., Que efectúe maniobras sorpresivas que sorprendan a los demás."
+    "answer": [
+      "Que actúe sin pensar en las consecuencias.",
+      "Que efectúe maniobras sorpresivas que sorprendan a los demás."
+    ]
   },
   {
     "index": 20,
@@ -377,7 +376,7 @@
   },
   {
     "index": 32,
-    "type": "single",
+    "type": "multiple",
     "question": "En relación con los cruces ferroviarios a nivel, ¿cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
     "options": [
       "Extrañamente, está permitido estacionar a 10 m de un cruce ferroviario a nivel.",
@@ -385,7 +384,10 @@
       "Si va con la radio de su vehículo encendida, es conveniente apagarla cuando se aproxima a un cruce ferroviario.",
       "Nada impide que pueda efectuar un adelantamiento en un cruce ferroviario, si no siente tren alguno en las proximidades."
     ],
-    "answer": "Si ya ha ingresado a un cruce ferroviario y siente que se aproxima un tren a lo lejos, lo mejor es continuar., Si va con la radio de su vehículo encendida, es conveniente apagarla cuando se aproxima a un cruce ferroviario."
+    "answer": [
+      "Si ya ha ingresado a un cruce ferroviario y siente que se aproxima un tren a lo lejos, lo mejor es continuar.",
+      "Si va con la radio de su vehículo encendida, es conveniente apagarla cuando se aproxima a un cruce ferroviario."
+    ]
   },
   {
     "index": 33,

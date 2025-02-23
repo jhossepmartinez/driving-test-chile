@@ -11,12 +11,12 @@ export const MultipleAnswerQuestionCard = ({ questionData, onChange, userAnswers
     };
 
     return (
-        <div className="card shadow-xl bg-base-100 mb-6">
+        <div className="card shadow-lg bg-base-100 mb-6">
             <div className="card-body">
                 <h2 className="card-title">
                     {question}
                 </h2>
-                { image && (
+                {image && (
                     <figure>
                         <img
                             className="rounded-md object-cover"
@@ -26,37 +26,33 @@ export const MultipleAnswerQuestionCard = ({ questionData, onChange, userAnswers
                 )}
                 <div className="space-y-2">
                     {options.map((option, index) => (
-                        <div
-                            key={index}
-                            className="form-control">
-                            <label className="label cursor-pointer">
+                            <p
+                                key={index}
+                                className="form-control flex items-center">
                                 <input
                                     type="checkbox"
                                     name={question}
-                                    className="checkbox checkbox-primary checkbox-sm"
+                                    className="checkbox checkbox-primary checkbox-sm mr-2"
                                     value={option}
                                     onChange={() => handleCheckboxChange(option)}
                                 />
-                                <span className="label-text  text-balance">
+                                <p className={showAnswers && answer.includes(option) ? "text-green-500" : ""}>
                                     {option}
-                                </span>
-
-                            </label>
-                        </div>
-                    ))}
+                                </p>
+                            </p>
+                        ))}
                 </div>
                 {showAnswers && (
                     <div className="mt-4">
                         <span className="font-bold">Correct Answer:</span> 
                         <div className=" flex flex-col space-y-2">
-
                             {answer.map((ans, index) => (
-                                <span
-                                    key={index}
-                                    className="badge badge-primary badge-outline badge-sm">
-                                    {ans}
-                                </span>
-                            ))}
+                                    <span
+                                        key={index}
+                                        className="">
+                                        {ans}
+                                    </span>
+                                ))}
                         </div>
 
                     </div>
