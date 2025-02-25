@@ -1,6 +1,7 @@
 import {
     SingleAnswerQuestion 
 } from "../../types";
+
 const SingleAnswerQuestionCard = ({ questionData, onChange, showAnswers }: { questionData: SingleAnswerQuestion, onChange: (answer: string) => void, showAnswers: boolean }) => {
     const { question, options, answer, image } = questionData;
     return (
@@ -20,9 +21,9 @@ const SingleAnswerQuestionCard = ({ questionData, onChange, showAnswers }: { que
                     </h2>
                     <div className="space-y-2">
                         {options.map((option, index) => (
-                            <p
+                            <label
                                 key={index}
-                                className="form-control flex items-center">
+                                className="form-control flex items-center cursor-pointer">
                                 <input
                                     type="radio"
                                     name={question}
@@ -30,19 +31,12 @@ const SingleAnswerQuestionCard = ({ questionData, onChange, showAnswers }: { que
                                     value={option}
                                     onChange={() => onChange(option)}
                                 />
-                                <p className="">
+                                <p className={showAnswers && answer === option  ? "text-success" : ""}>
                                     {option}
                                 </p>
-                            </p>
+                            </label>
                         ))}
                     </div>
-                    {showAnswers && (
-                        <div className="mt-4">
-                            <span className="font-bold">Correct Answer:</span> 
-                            {' '}
-                            {answer}
-                        </div>
-                    ) }
                 </div>
             </div>
         </>
